@@ -34,9 +34,8 @@ def webhook_handler():
 
 def reply_handler(bot, update):
     """Reply message."""
-    print(update)
     text = update.message.text
-    update.message.reply_text(text)
+    update.message.reply_text(text+"123")
 
 
 # New a dispatcher for bot
